@@ -1,5 +1,9 @@
 from logic import *
 
-Symbol("rain") # it's raining
-Symbol("hagrid") # harry visted hagraid.
-Symbol("dumbledore") # harry visted dumbledore.
+rain = Symbol("rain") # it's raining
+hagrid = Symbol("hagrid") # harry visted hagraid.
+dumbledore = Symbol("dumbledore") # harry visted dumbledore.
+sentence = And(rain,hagrid)
+
+knowledge = Not(rain)
+print(sentence.formula())
